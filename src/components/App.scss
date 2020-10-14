@@ -1,0 +1,36 @@
+.app {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+  &__footer {
+    @include no-select;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  }
+
+  &__footer {
+    @include easing(300ms, opacity);
+    opacity: 1;
+  }
+
+  &__footer:not(:hover) {
+    animation: fade-out 2s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+    animation-delay: 3s;
+  }
+
+  &__seed {
+    user-select: all;
+    padding-bottom: 3px;
+
+    &::before  {
+      content: 'SEED #';
+    }
+  }
+}

@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: $background;
+  font-family: 'Friction Mono', sans-serif;
+  font-size: 1rem;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection  {
+  background: black;
+  color: white;
+}
+
+kbd {
+  // Thanks Github !
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  padding: 3px 5px;
+  vertical-align: middle;
+  font-weight: bold;
+}

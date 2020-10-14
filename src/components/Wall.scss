@@ -1,0 +1,31 @@
+.wall {
+  @include no-select;
+  width: auto;
+  max-height: 90vh;
+  background: white;
+  outline: 1px solid black;
+
+  &, * {
+    pointer-events: bounding-box;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .grid {
+    @include easing(200ms, opacity);
+    opacity: 0.3;
+  }
+
+  .grid,
+  .grid * {
+    pointer-events: none !important;
+  }
+
+  .grid__mark line {
+    @include easing(200ms, transform);
+  }
+
+  #App.debug & {
+    .grid { opacity: 0.7; }
+    .grid__mark line { transform: scale(0.125); }
+  }
+}
