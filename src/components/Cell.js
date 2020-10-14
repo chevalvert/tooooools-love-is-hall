@@ -73,5 +73,6 @@ export default class Cell extends Component {
         transform={`scale(${Math.max(this.state.width, this.state.height) / BASE_UNIT})`}
       />
     ), this.base)
+    console.log(this)
   }
 }
