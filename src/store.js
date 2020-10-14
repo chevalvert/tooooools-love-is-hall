@@ -6,8 +6,7 @@ const Store = {
 
   cell: {
     size: readable(295),
-    unit: readable('mm'),
-    growth: writable(0)
+    unit: readable('mm')
   },
 
   wall: {
