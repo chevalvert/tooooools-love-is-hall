@@ -21,7 +21,6 @@ export default class HallNumber extends Cell {
     const padding = 40
     this.render([
       <text
-        class='no-export'
         x={this.state.width - padding}
         y={padding}
         text-anchor='end'
@@ -31,7 +30,6 @@ export default class HallNumber extends Cell {
       >hall</text>,
       <text
         ref={this.ref('number')}
-        class='no-export'
         x={this.state.width - padding}
         y={this.state.height - padding}
         text-anchor='end'
