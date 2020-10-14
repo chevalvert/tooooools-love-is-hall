@@ -1,6 +1,6 @@
 {
   "name": "tooooools-love-is-hall",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Paris Habitat",
   "scripts": {
     "analyze": "cross-env NODE_ENV=production webpack -p --config config/webpack.config.prod.js --profile --json > stats.json && echo \"→ Stats.json created\" && echo \"→ Drop your file to https://chrisbateman.github.io/webpack-visualizer/\"",
