@@ -11,19 +11,18 @@ const Store = {
 
   wall: {
     cols: readable(4),
-    rows: readable(11),
-    cellsLength: readable(6)
+    rows: readable(5),
+    cellsLength: readable(4)
   },
 
   colors: {
-    length: readable(2),
+    length: readable(1),
     primary: readable([
       '#4fc6e1',
       '#d4dd21',
       '#f5821f'
     ]),
     secondary: readable([
-      '#000000',
       '#f49ac2',
       '#67c18d',
       '#8a6161',

@@ -53,7 +53,7 @@ export default class Wall extends Component {
   renderCells () {
     // Create a special locked cell wich represents existing occupied cells in
     // the real wall
-    const hallNumber = new VirtualCell(2, 3, 2, 2, true)
+    const hallNumber = new VirtualCell(2, 0, 2, 2, true)
 
     // 1 -
     // Create an array of unique position and assign a cell on each one,
